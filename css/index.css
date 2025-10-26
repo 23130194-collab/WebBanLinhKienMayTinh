@@ -127,3 +127,88 @@ header {
         width: 90%;
     }
 }
+
+
+/* CSS Footer */
+footer {
+    display: block;
+    width: 100%;
+    background-color: #f8f8f8;                  /* Màu nền footer xám hơn so với nền chính */
+    color: black;
+    font-family: sans-serif;                    /* Chọn font chữ cơ bản */
+    padding: 50px 5%;                           /* Padding trên dưới và 2 bên */
+    line-height: 1.8;                           /* Khoảng cách giữa các dòng */
+}
+
+
+/* Đã sửa: Thay selector 'foot h4' bằng 'footer h4' */
+footer h4 {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;                        /* Khoảng cách với phần bên dưới */
+    margin-top: 25px;                           /* Khoảng cách với phía trên */
+}
+
+/* Đã sửa: Thay selector 'foot ul' bằng 'footer ul' */
+footer ul {
+    list-style: none;                           /* Xóa dấu chấm đầu dòng (do dùng ul) */
+    padding: 0;
+    margin: 0;
+}
+
+/* Đã sửa: Thay selector 'foot ul li' bằng 'footer ul li' */
+footer ul li {
+    font-size: 13px;
+    margin-bottom: 8px;                         /* Khoảng cách giữa các mục trong danh sách */
+}
+
+/* Bố cục cho 4 cột */
+.footer-main-content {
+    display: flex;                              /* Chuyển thành các cột nằm ngang */
+    justify-content: space-between;             /* Chia đều khoảng cách giữa các cột đều ra */
+    margin-bottom: 30px;                        /* Khoảng cách với phần Đăng ký bên dưới */
+}
+
+/* Chỉnh kích thước cho từng cột */
+.footer-col {
+    width: 25%;                                 /* Cung cấp độ rộng tương đối cho 4 cột */
+    padding-right: 15px;                        /* Thêm padding bên phải để ngăn nội dung dính vào nhau */
+}
+
+/* Điều chỉnh cho không bị cách quá xa ra khỏi phần trên */
+.footer-col h4:first-child {
+    margin-top: 0;
+}
+
+.payment-methods {
+    display: flex;
+    flex-wrap: wrap;                             /* Cho các logo tự động xuống dòng */
+    gap: 12px;                                   /* Khoảng cách giữa các logo */
+    margin-top: 10px;
+}
+
+/* Điểu chỉnh khung cố định cho hình ảnh và đường viền của các phương thức thanh toán */
+.payment-methods img {
+    width: 65px;
+    height: 35px;
+    object-fit: contain;                        /* Điều chỉnh cho ảnh vừa với đường viền */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    padding: 2px;
+}
+
+.connect-methods {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+/* Điểu chỉnh khung cố định cho hình ảnh và đường viền của các phương tiện truyền thông */
+.connect-methods img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Làm cho icon tròn */
+    object-fit: cover;
+}
