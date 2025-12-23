@@ -1,0 +1,238 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Thông tin tài khoản | TechNova</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/header.css">
+
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <a href="home.jsp" class="logo">
+            <img src="https://i.postimg.cc/Hn4Jc3yj/logo-2.png" alt="TechNova Logo">
+            <span class="brand-name">TechNova</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="home.jsp" class="active">Trang chủ</a>
+            <a href="gioiThieu.jsp">Giới thiệu</a>
+            <a href="#" id="category-toggle">Danh mục</a>
+            <a href="lienHe.jsp">Liên hệ</a>
+        </nav>
+
+        <div class="search-box">
+            <input type="text" placeholder="Bạn muốn mua gì hôm nay?">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="header-actions">
+            <a href="cart.jsp" class="icon-btn" title="Giỏ hàng">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+            <a href="user.jsp" class="icon-btn" title="Tài khoản của bạn">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+
+        <div class="category-box" id="categoryBox">
+            <a href="cpu.jsp" class="category-item"><i class="fa-solid fa-microchip"></i> CPU <i
+                    class="fa-solid fa-chevron-right"></i></a>
+            <a href="mainboard.html" class="category-item"><i class="fa-solid fa-diagram-project"></i> Mainboard <i
+                    class="fa-solid fa-chevron-right"></i></a>
+            <a href="ram.html" class="category-item"><i class="fa-solid fa-memory"></i> RAM <i
+                    class="fa-solid fa-chevron-right"></i></a>
+            <a href="oCung.html" class="category-item"><i class="fa-solid fa-hard-drive"></i> Ổ cứng <i
+                    class="fa-solid fa-chevron-right"></i></a>
+            <a href="../../tataat/demo2/src/main/cardManHinh.html" class="category-item"><i class="fa-solid fa-gauge-high"></i> Card màn hình <i
+                    class="fa-solid fa-chevron-right"></i></a>
+            <a href="psu.html" class="category-item"><i class="fa-solid fa-plug"></i> Nguồn máy tính <i
+                    class="fa-solid fa-chevron-right"></i></a>
+            <a href="tanNhiet.html" class="category-item"><i class="fa-solid fa-fan"></i> Tản nhiệt <i
+                    class="fa-solid fa-chevron-right"></i></a>
+            <a href="case.html" class="category-item"><i class="fa-solid fa-computer"></i> Case máy tính <i
+                    class="fa-solid fa-chevron-right"></i></a>
+        </div>
+    </div>
+</header>
+<div class="overlay" id="overlay"></div>
+<div class="container">
+    <div class="top-card" role="region" aria-label="thông tin tài khoản">
+        <div class="profile">
+
+            <div class="summary-card">
+                <div class="summary-left">
+                    <div class="reviewer-avatar">N</div>
+                    <div class="summary-info">
+                        <div class="summary-name">Nguyễn Võ Quang Minh</div>
+                        <div class="summary-phone">0123456789</div>
+                    </div>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-item">
+                    <div class="summary-icon">
+                        <i class="fa-solid fa-cart-shopping" style="color: #ff0000;"></i>
+                    </div>
+                    <div class="summary-text">
+                        <div class="summary-count">5</div>
+                        <div class="summary-label">Tổng số đơn hàng đã mua</div>
+                    </div>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-item">
+                    <div class="summary-icon">
+                        <i class="fa-solid fa-sack-dollar" style="color: #74C0FC;"></i>
+                    </div>
+                    <div class="summary-text">
+                        <div class="summary-count">2.265.000₫</div>
+                        <div class="summary-small">Tổng tiền tích lũy</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="main">
+
+        <aside class="side" aria-label="menu">
+            <nav class="menu" aria-label="menu chính">
+
+                <a href="user.jsp" class="menu-item" data-target="orders">
+                    <i class="fa-solid fa-list icon"></i>
+                    <span class="label">Đơn hàng của tôi</span>
+                </a>
+
+                <a href="sanPhamYeuThich.jsp" class="menu-item" data-target="favorites">
+                    <i class="fa-regular fa-heart icon"></i>
+                    <span class="label">Sản phẩm yêu thích</span>
+                </a>
+
+                <a href="thongTinTaiKhoan.html" class="menu-item active" data-target="account">
+                    <i class="fa-regular fa-user icon"></i>
+                    <span class="label">Thông tin tài khoản</span>
+                </a>
+
+                <a href="index.html" class="menu-item" data-target="account">
+                    <i class="fa-solid fa-right-from-bracket icon"></i>
+                    <span class="label">Đăng xuất</span>
+                </a>
+            </nav>
+        </aside>
+        <section class="content">
+
+            <div class="section active" id="account">
+                <h2>Thông tin tài khoản</h2>
+
+                <div class="info-section">
+                    <div class="card" style="grid-column: span 2;">
+                        <!-- Khung Thông tin cá nhân -->
+<!--                        <section class="personal-info">-->
+                            <!-- Khung hiển thị -->
+                            <div class="info-card" id="infoView">
+                                <div class="info-header">
+                                    <h3>Thông tin cá nhân</h3>
+                                    <button id="editBtn" class="update-btn">Cập nhật</button>
+                                </div>
+
+                                <div class="info-body">
+                                    <div class="info-row">
+                                        <span>Họ và tên:</span>
+                                        <p id="name">Trịnh Trần Phương Tuấn</p>
+                                        <span>Số điện thoại:</span>
+                                        <p id="phone">+(84) 332 669 512</p>
+                                    </div>
+                                    <div class="info-row">
+                                        <span>Giới tính:</span>
+                                        <p id="gender">Nam</p>
+                                        <span>Email:</span>
+                                        <p id="email">phuongtuan@gmail.com</p>
+                                    </div>
+                                    <div class="info-row">
+                                        <span>Ngày sinh:</span>
+                                        <p id="dob">12/04/1997</p>
+                                        <span>Địa chỉ:</span>
+                                        <p id="address">123 Nguyễn Trãi, Q5, TP.HCM</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Khung chỉnh sửa (ẩn lúc đầu) -->
+                            <div class="info-card hidden" id="infoForm">
+                                <div class="info-header">
+                                    <h2>Cập nhật thông tin</h2>
+                                </div>
+
+                                <div class="info-body">
+                                    <div class="info-row">
+                                        <span>Họ và tên:</span>
+                                        <input type="text" id="inputName" value="Nguyễn Võ Quang Minh">
+                                        <span>Số điện thoại:</span>
+                                        <input type="text" id="inputPhone" value="0978173770">
+                                    </div>
+                                    <div class="info-row">
+                                        <span>Giới tính:</span>
+                                        <select id="inputGender">
+                                            <option>Nam</option>
+                                            <option>Nữ</option>
+                                            <option>Khác</option>
+                                        </select>
+                                        <span>Email:</span>
+                                        <input type="email" id="inputEmail" value="minh@example.com">
+                                    </div>
+                                    <div class="info-row">
+                                        <span>Ngày sinh:</span>
+                                        <input type="date" id="inputDob" value="2005-11-18">
+                                        <span>Địa chỉ:</span>
+                                        <input type="text" id="inputAddress" value="123 Nguyễn Trãi, Q5, TP.HCM">
+                                    </div>
+                                </div>
+
+                                <div class="info-actions">
+                                    <button id="saveBtn" class="save-btn">Lưu</button>
+                                    <button id="cancelBtn" class="cancel-btn">Hủy</button>
+                                </div>
+                            </div>
+<!--                        </section>-->
+                    </div>
+                    <div class="card">
+                        <h3>
+                            Mật khẩu
+                            <a href="thayDoiMK.jsp" class="update-btn-ud">Thay đổi</a>
+                        </h3>
+
+                        <div class="info-item">Cập nhật lần cuối: 29/10/2025 16:11</div>
+
+                    </div>
+
+
+                    <div class="card">
+                        <h3>Tài khoản liên kết</h3>
+                        <div class="linked"><i class="fa-brands fa-google"
+                                               style="color: #ff7b00;"></i><span>Google</span><span
+                                class="linked-status">Liên kết</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</div>
+
+<script src="js/header.js"></script>
+<script src="js/thongTinTaiKhoan.js"></script>
+
+</body>
+</html>
