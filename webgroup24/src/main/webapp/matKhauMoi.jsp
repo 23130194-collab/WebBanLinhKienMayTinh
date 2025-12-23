@@ -1,0 +1,43 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mật khẩu mới | TechNova</title>
+    <link rel="stylesheet" href="css/form.css"/>
+</head>
+<body>
+<div class="overlay">
+    <div class="forgot-password-modal">
+        <div class="back-link">
+            <p><a href="forgot.jsp">
+                <span class="icon-circle">←</span>Quay lại
+
+            </a></p>
+        </div>
+        <h2>Đặt mật khẩu mới</h2>
+        <p>Nhập mật khẩu mới của bạn để hoàn tất đặt lại.</p>
+
+        <form id="reset-password-form">
+            <div class="input-group">
+                <input type="password" id="new-password" placeholder="Mật khẩu mới" required/>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="confirm-password" placeholder="Xác nhận mật khẩu" required/>
+            </div>
+
+            <!-- Nút gửi và chuyển về trang đăng nhập -->
+            <a href="login.jsp" class="forgot-password-btn">Gửi</a>
+
+        </form>
+
+        <div class="login">
+            <p>Quay lại? <a href="login.jsp">Đăng nhập</a></p>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

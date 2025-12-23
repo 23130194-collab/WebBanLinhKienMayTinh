@@ -1,0 +1,37 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Quên mật khẩu | TechNova</title>
+    <link rel="stylesheet" href="css/form.css"/>
+</head>
+<body>
+<div class="overlay">
+    <div class="forgot-password-modal">
+        <div class="back-link">
+            <p><a href="login.jsp">
+                <span class="icon-circle">←</span>Quay lại
+
+            </a></p>
+        </div>
+        <h2>Quên mật khẩu</h2>
+        <p>Nhập email của bạn để nhận hướng dẫn đặt lại mật khẩu.</p>
+
+        <form id="forgot-password-form">
+            <div class="input-group">
+                <input type="email" id="forgot-email" placeholder="Nhập email" required/>
+            </div>
+
+            <a href="matKhauMoi.jsp" class="forgot-password-btn">Gửi yêu cầu</a>
+
+        </form>
+
+        <div class="login">
+            <p>Nhớ mật khẩu? <a href="login.jsp">Đăng nhập</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
